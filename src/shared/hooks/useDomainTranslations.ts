@@ -9,7 +9,7 @@ const useDomainTranslations = (domain: DomainNamespace) => {
 	useEffect(() => {
 		// Cargar el namespace del dominio si no está cargado
 		// if (!i18n.hasResourceBundle(i18n.language, domain)) {
-			i18n.loadNamespaces(domain)
+		i18n.loadNamespaces(domain)
 		// }
 	}, [domain, i18n])
 

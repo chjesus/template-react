@@ -2,7 +2,7 @@ import type { Components, Theme } from '@mui/material/styles'
 
 const createComponents = (): Components<Theme> => {
 	return {
-    // example of overriding MUI component styles
+		// example of overriding MUI component styles
 		MuiToolbar: {
 			styleOverrides: {
 				root: ({ theme }: { theme: Theme }) => ({

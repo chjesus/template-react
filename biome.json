@@ -282,7 +282,7 @@
 						"noFunctionAssign": "off",
 						"noImportAssign": "off",
 						"noRedeclare": "off",
-            "noEmptyBlockStatements": "off",
+						"noEmptyBlockStatements": "off",
 						"noUnsafeNegation": "off",
 						"noVar": "error",
 						"noWith": "off",

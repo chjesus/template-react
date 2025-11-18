@@ -1,9 +1,6 @@
-export const ThemeMode = {
-	LIGHT: 'light',
-	DARK: 'dark',
-} as const
+export const ThemeMode = { LIGHT: 'light', DARK: 'dark' } as const
 
-export type ThemeMode = typeof ThemeMode[keyof typeof ThemeMode]
+export type ThemeMode = (typeof ThemeMode)[keyof typeof ThemeMode]
 
 export type PresetColor = 'default' | 'custom'
 
