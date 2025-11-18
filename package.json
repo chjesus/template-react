@@ -8,6 +8,9 @@
 		"build": "tsc -b && vite build",
 		"preview": "vite preview",
 		"prepare": "husky",
+		"lint:check": "biome check",
+		"lint:fix": "biome check --write",
+		"format:fix": "biome format --write",
 		"lint-staged": "lint-staged --allow-empty"
 	},
 	"dependencies": {

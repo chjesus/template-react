@@ -13,8 +13,7 @@ const Home = () => {
 		dispatch(increment())
 	}
 
-  const d = 1
-  const da
+ 
 
 
 	return (
