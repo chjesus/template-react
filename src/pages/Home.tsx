@@ -14,8 +14,6 @@ const Home = () => {
 	}
 
  
-const a 
-
 	return (
 		<div>
 	<h1 className="prueba">Home Page {t('loading')}</h1>		<Typography variant="h1" component="h1">

@@ -10,8 +10,7 @@
 		"prepare": "husky",
 		"lint:check": "biome check",
 		"lint:fix": "biome check --write",
-		"format:fix": "biome format --write",
-		"lint-staged": "lint-staged --allow-empty"
+		"format:fix": "biome format --write"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.14.0",
