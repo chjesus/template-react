@@ -13,8 +13,10 @@ const Home = () => {
 		dispatch(increment())
 	}
 
-  const c = 1
-  const d
+  const d = 1
+  const da
+
+
 	return (
 		<div>
 	<h1 className="prueba">Home Page {t('loading')}</h1>		<Typography variant="h1" component="h1">
