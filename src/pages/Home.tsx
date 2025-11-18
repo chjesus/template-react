@@ -14,6 +14,7 @@ const Home = () => {
 	}
 
   const a = 1
+  const b = 2
 	return (
 		<div>
 			<h1 className="prueba">Home Page {t('loading')}</h1>
