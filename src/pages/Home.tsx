@@ -3,17 +3,20 @@ import { increment } from '@entities/example/model/exampleSlice'
 
 import { getCountValue } from '@entities/example/model/selectors'
 import Typography from '@mui/material/Typography'
+import useDomainTranslations from '@shared/hooks/useDomainTranslations'
 
 const Home = () => {
 	const dispatch = useDispatch()
+	const { t } = useDomainTranslations('common')
 	const getCountvalue = useSelector(getCountValue)
 	const handleCount = () => {
 		dispatch(increment())
 	}
 
+  const a = 1
 	return (
 		<div>
-			<h1 className="prueba">Home Page</h1>
+			<h1 className="prueba">Home Page {t('loading')}</h1>
 			<Typography variant="h1" component="h1">
 				Whereas recognition of the inherent dignity
 			</Typography>

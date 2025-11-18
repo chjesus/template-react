@@ -1,5 +1,5 @@
 import { createContext, useEffect } from 'react'
-// import i18n from '@/translation/config'
+import i18n from '@shared/config/i18n/config'
 import { ThemeMode } from '@shared/types/theme'
 import { CONFIG_DEFAULT_USER } from '@shared/consts/configUser'
 
@@ -47,7 +47,7 @@ function ConfigProvider({ children }: ConfigProviderProps) {
 
 	const onChangeLocalization = (lang: I18n) => {
 		setStoredConfig({ ...storedConfig, i18n: lang })
-		// i18n.changeLanguage(lang)
+		i18n.changeLanguage(lang)
 	}
 
 	useEffect(() => {
