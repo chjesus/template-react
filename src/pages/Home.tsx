@@ -13,10 +13,10 @@ const Home = () => {
 		dispatch(increment())
 	}
 
- 
 	return (
 		<div>
-	<h1 className="prueba">Home Page {t('loading')}</h1>		<Typography variant="h1" component="h1">
+			<h1 className="prueba">Home Page {t('loading')}</h1>{' '}
+			<Typography variant="h1" component="h1">
 				Whereas recognition of the inherent dignity
 			</Typography>
 			<button onClick={handleCount}>Count +1</button>
