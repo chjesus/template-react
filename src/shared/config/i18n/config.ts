@@ -12,10 +12,6 @@ i18n
 		defaultNS: 'shared',
 		debug: process.env.NODE_ENV === 'development',
 		interpolation: { escapeValue: false, skipOnVariables: true },
-		resources: {
-			en: { common: { loading: 'Loading...', error: 'An error occurred' } },
-			es: { common: { loading: 'Cargando...', error: 'Ocurrió un error' } },
-		},
 		react: { useSuspense: false },
 		detection: {
 			// 👇 no necesitas configurar lookupLocalStorage aquí,

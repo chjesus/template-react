@@ -1,19 +1,26 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import i18n from '@shared/config/i18n/config'
 
-type DomainNamespace = string
-
-const useDomainTranslations = (domain: DomainNamespace) => {
-	const { i18n, t, ready } = useTranslation([domain])
+export default function useDomainTranslation(domain: string) {
+	const [loaded, setLoaded] = useState(false)
+	const { t, ...rest } = useTranslation(domain)
 
 	useEffect(() => {
-		// Cargar el namespace del dominio si no está cargado
-		// if (!i18n.hasResourceBundle(i18n.language, domain)) {
-		i18n.loadNamespaces(domain)
-		// }
-	}, [domain, i18n])
+		async function load() {
+			const lang = i18n.language
+			try {
+				const translations = await import(
+					`../../entities/${domain}/locale/${lang}/${domain}.json`
+				)
+				i18n.addResourceBundle(lang, domain, translations, true, true)
+				setLoaded(true)
+			} catch {
+				console.warn(`No se encontraron traducciones para ${domain}`)
+			}
+		}
+		load()
+	}, [domain])
 
-	return { t, ready }
+	return { t, loaded, ...rest }
 }
-
-export default useDomainTranslations

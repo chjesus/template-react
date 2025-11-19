@@ -55,7 +55,7 @@ function ConfigProvider({ children }: ConfigProviderProps) {
 			try {
 				const savedConfig = localStorage.getItem('zalv-user-config')
 				if (!savedConfig) {
-					// i18n.changeLanguage(CONFIG_DEFAULT_USER.i18n)
+					i18n.changeLanguage(CONFIG_DEFAULT_USER.i18n)
 				}
 			} catch {
 				// error
