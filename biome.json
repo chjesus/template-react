@@ -10,7 +10,7 @@
 		"lineWidth": 80,
 		"lineEnding": "lf",
 		"bracketSpacing": true,
-		"bracketSameLine": true,
+		"bracketSameLine": false,
 		"expand": "never",
 		"includes": [
 			"**",

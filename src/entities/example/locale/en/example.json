@@ -1,6 +1,1 @@
-{
-	"example": {
-		"title": "Example Title",
-		"description": "Explore our available courses"
-	}
-}
+{ "example": { "button": "Count" } }

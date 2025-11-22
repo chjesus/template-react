@@ -4,11 +4,8 @@ function theme(mode: ThemeMode) {
 	// const TEXT = mode === ThemeMode.DARK ? TEXT_COLOR_DARK : TEXT_COLOR
 
 	return {
-		primary: { main: '#1976d2' },
-		secondary: { main: '#dc004e' },
-		// main: SECONDARY_COLOR[0],
-		// light: SECONDARY_COLOR[1],
-		// dark: SECONDARY_COLOR[2],
+		primary: { main: '#797cd2' },
+		secondary: { main: '#393e9e' },
 		// contrastText: CONTRAST_TEXT,
 		// error: {},
 		// warning: {},

@@ -20,7 +20,7 @@ export default function useDomainTranslation(domain: string) {
 			}
 		}
 		load()
-	}, [domain])
+	}, [domain, i18n.language])
 
 	return { t, loaded, ...rest }
 }
