@@ -5,7 +5,6 @@ import { getCountValue } from '@entities/example/model/selectors'
 import Typography from '@mui/material/Typography'
 import useDomainTranslation from '@shared/hooks/useDomainTranslations'
 import useConfig from '@shared/hooks/useConfig'
-// import Breaker from '@shared/ui/Breaker'
 
 import type { I18n } from '@shared/types/theme'
 
@@ -28,7 +27,6 @@ const Home = () => {
 	return (
 		<div>
 			<h1 className="prueba">Home Page {t('example.title')}</h1>
-			{/* <Breaker /> */}
 			<Typography variant="h1" component="h1">
 				Whereas recognition of the inherent dignity
 			</Typography>
